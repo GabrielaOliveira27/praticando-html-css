@@ -10,9 +10,10 @@
 
 :root {
   --cor1: #F2F2F2;
-  --cor2: #D7D9D9;
-  --cor3: #6D90A6;
-  --cor4: #1C2026;
+  --cor2: #BFBFBF;
+  --cor3: #4C5958;
+  --cor4: #10403B;
+  --cor5: #127369;
   --font-titulo: "brevia", Arial, Helvetica, sans-serif;
   --font-paragrafo: "vista-sans", sans-serif;
 }
@@ -23,7 +24,7 @@ html, body {
 }
 
 header {
-  background-image: linear-gradient(to bottom, var(--cor3), var(--cor2));
+  background-image: linear-gradient(to bottom, var(--cor3), var(--cor1));
   padding: 50px 0px 50px 0px;
   text-align: center;
 }
@@ -36,9 +37,10 @@ header > h1 {
 }
 
 nav {
+  margin: 0;
   background-color: var(--cor1);
   text-align: center;
-  padding-bottom: 5px;
+  padding-bottom: 5px 0px;
   padding-top: 10px;
   font-family: var(--font-paragrafo);
   font-weight: bolder;
@@ -48,17 +50,25 @@ nav {
 nav > a {
   color: var(--cor4);
   text-decoration: none;
-  padding-right: 15px;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.27);
+  padding-right: 10px;
+  text-shadow: 1px 1px 1px #10403b4b;
+}
+
+nav > a:hover {
+  color: var(--cor3);
+  background-color: var(--cor2);
+  padding: 5px;
+  border-radius: 2px;
+  
 }
 
 main {
   background-color: var(--cor1);
-  padding: 50px 20px;
+  padding: 50px 10px;
 }
 
 main > section {
-  padding: 10vw;
+  padding: 5vw;
   text-indent: 10px;
   color: var(--cor4);
   font-size: 2.5vw;
@@ -69,23 +79,67 @@ main > section {
 
 main > section.texto {
   font-family: var(--font-paragrafo);
+  display: inline-block;
+  margin-left: -20px;
 }
 
 main > section.imagem {
   background-color: var(--cor4);
-  margin-left: -20px;
-  margin-right: -20px;
+  background-size: cover;
+  margin-left: -10px;
+  margin-right: -10px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.474);
 }
 
 main > section.imagem > p {
-  background-color: var(--cor1);
-  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.664);
   font-family: var(--font-paragrafo);
   padding: 20px;
   line-height: 2em;
-  padding: 20px;
+  position: sticky;
+  left: -5%;
+  top: 5%;
+  transform: translate(-5%, 5%);
+  width: 50%;
+  height: 50%;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.37);
+  
 }
 
 section#img1 {
-  background-image:;
+  background-image: url('../imagens/Firefly\ book\ 97956.jpg');
 }
+
+section#img2 {
+  background-image: url('../imagens/Firefly\ sunflower\ ladybird\ 59875.jpg');
+}
+
+section#img3 {
+  background-image: url('../imagens/Firefly\ apple\,\ cherry\ and\ pear\ in\ a\ strainer\ on\ a\ table\ 74191.jpg');
+}
+
+footer {
+  background-color: lightgray;
+  padding: 10px;
+}
+
+footer > p {
+  font-family: var(--font-paragrafo);
+  text-align: center;
+}
+
+footer a {
+  color: var(--cor3);
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.312);
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+footer a:hover {
+  color: var(--cor4);
+  text-decoration: underline;
+  font-variant: small-caps;
+}
+
+
+
