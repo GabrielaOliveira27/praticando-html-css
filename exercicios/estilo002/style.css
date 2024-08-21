@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor1: #D9D9D9;
+  --cor2: #A6A6A6;
+  --cor3: #737373;
+  --cor4: #595959;
+  --cor5: #262626;
+}
+
+body {
+  max-width: 500vw;
+  max-width: 1000vw;
+  
+}
+
+header {
+  position: relative;
+  background-color: var(--cor1);
+  background-image: url('../imagens/Firefly\ imagem\ em\ preto\ e\ branco\,\ pessoas\ felizes\,\ praia\ 48322.jpg');
+  background-size: cover;
+  background-position: center center;
+  min-height: 600px;
+}
+
+header > h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 10vw;
+  color: var(--cor1);
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.334);
+  background-color: var(--cor2);
+  padding: 10px;
+  
+}
+
+nav  {
+  position: absolute;
+  background-color: var(--cor2);
+  left: 22vw;
+  right: 22vw;
+  top: -1%;
+  transform: translate(22vw, -1%, 22vw);
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 6px;
+
+}
+
+nav > a {
+  font-size: 1em;
+  text-decoration: none;
+  color: var(--cor4);
+}
+
+nav > a:hover {
+  color: var(--cor5);
+}
