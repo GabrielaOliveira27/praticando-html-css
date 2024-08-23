@@ -7,39 +7,6 @@
 /* fonts end */
 
 
-@media screen and (min-width: 1000px) {
-  main {
-    color: var(--cor5);
-  }
-}
-
-@media screen and (max-width: 500px) {
-   main {
-    color: var(--cor5);
-   }
-
-   aside > img {
-    position: absolute;
-    left: 15px;
-    bottom: -2100px;
-    width: 70%;
-    z-index: 2;
-    background-color: transparent;
-   }
-
-   .section-2 > aside > p {
-    background-color: white;
-    position: relative;
-    left: -5px;
-    bottom: -2200px;
-    max-width: 150px;    
-    padding: 10px;
-    z-index: 1;
-    
-   }
-
-
-}
 
 * {
   margin: 0;
@@ -60,6 +27,8 @@
 
 body {
   background-color: var(--cor1);
+  height: 100vh;
+
   
 }
 
@@ -118,7 +87,6 @@ nav > a {
 
 nav > a:hover {
   color: var(--cor4);
-  trans
 }
 
 /* fim navebar */
@@ -126,7 +94,7 @@ nav > a:hover {
 /* conteúdo principal */
 
 main {
-  background-color: var(--cor1);
+  background-color: var(--cor1); 
   
 }
   
@@ -151,6 +119,7 @@ section#futebol, #famosos, #culinaria, #carros, #bolsa-valores, #filme {
   margin-left: 10px;
   padding: 20px;
   text-align: justify;
+  border-left: 5px solid #bfbfbf;
   box-shadow: 0px 1px 2px #00000051;
   max-width: 400px;
   max-height: 400px;
@@ -189,10 +158,15 @@ article > h1 {
   
 }
 
-.section > aside > img {
-  width: 50%;
+section img {
+  max-width: 40%;
+  display: inline-block;
+  position: sticky;
+  left: 10%;
+  right: 10%;
+  margin-top: -900px;
+  transform: translate(50%, 50%);
   
 }
-
 
 
