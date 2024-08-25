@@ -93,8 +93,17 @@ nav > a:hover {
 
 /* conteúdo principal */
 
+@media (max-width: 500px) {
+
+  #futebol, #famosos, #culinaria, #carros, #bolsa-valores, #filme {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 1fr;
+  }
+}
 main {
   background-color: var(--cor1); 
+  display: flex;
   
 }
   
@@ -134,39 +143,10 @@ article > h1 {
 
 /* fim conteúdo principal */
 
-/* Seção 2, sobre , marcadores...  */
-
-.section-2 {
-   font-family: var(--font-paragrafo);
-   
-}
 
 
-.section-2 > aside {
-  position: absolute;
-  right: -0px;
-  top: 620px;
- 
-}
 
-.section-2 > aside > p {
-  margin-top: -3px;
-  font-weight: bolder;
-  line-height: 20px;
-  background-color: white;
 
-  
-}
 
-section img {
-  max-width: 40%;
-  display: inline-block;
-  position: sticky;
-  left: 10%;
-  right: 10%;
-  margin-top: -900px;
-  transform: translate(50%, 50%);
-  
-}
 
 
