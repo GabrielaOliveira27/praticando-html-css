@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+@import url("https://use.typekit.net/agu0lai.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor1: #6D8F50;
+  --cor2: #82E02E;
+  --cor3: #5C73E0;
+  --cor4: #E07A5A;
+  --cor5: #e93600;
+
+  --fontprimaria: "cc-monstrosity-brain", sans-serif;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+  background-attachment: fixed;
+  height: 100vh;
+
+}
+
+header {
+  position: relative;
+  background-image: url('../imagens/Firefly\ casinhas\ de\ papel\ 96878.jpg');
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+}
+
+header > h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--fontprimaria);
+  color: white;
+  text-shadow: 1px 2px 2px black;
+  font-size: 15vw;
+  font-variant: small-caps;
+  z-index: 2;
+}
+
+header > p {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -70%);
+  z-index: 1;
+  font-size: 1.2em;
+  background-color: white;
+  font-weight: bolder;
+  padding: 10px;
+
+}
+
+nav {
+  background-color: var(--cor2);
+  position: relative;
+  left: 0%;
+  right: 0%;
+  top: -100%;
+  padding: 10px;
+  box-shadow: 0px 2px 1px #0000001e;
+  text-align: center;
+
+}
+
+nav > a {
+  text-decoration: none;
+  color: white;
+  padding: 0px 5px 0px;
+  font-weight: bolder;
+  transition-duration: .7s;
+  cursor: pointer;
+}
+
+nav > a:hover {
+  background-color: var(--cor5);
+  padding: 5px;
+  color: var(--cor2);
+}
+
+main {   
+  margin: auto;
+  width: 70%;
+  
+  
+
+}
+
+
+main article {
+  padding: 10px;
+  line-height: 2em;
+  background-image: url('../imagens/Firefly\ pintura\ casas\ e\ arvores\ 89343.jpg');
+  background-size: cover;
+  margin-bottom: 50px;
+  padding: 20px;
+  
+}
+
+
+article p {
+  background-color: white;
+  padding: 10px;
+  border-radius: 0px 0px 5px 5px;
+
+}
+
+article h1 {
+  background-image: linear-gradient(to right, var(--cor5), var(--cor2), rgb(226, 226, 0));
+  padding: 10px;
+  border-radius: 5px 5px 0px 0px;
+  color: white;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.181);
+  text-indent: 10px;
+
+}
