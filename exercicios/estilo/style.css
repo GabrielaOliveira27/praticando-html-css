@@ -2,143 +2,62 @@
 
 @import url("https://use.typekit.net/agu0lai.css");
 
-@import url("https://use.typekit.net/agu0lai.css");
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 
 :root {
-  --cor1: #F2F2F2;
-  --cor2: #BFBFBF;
-  --cor3: #4C5958;
-  --cor4: #10403B;
-  --cor5: #127369;
-  --font-titulo: "brevia", Arial, Helvetica, sans-serif;
-  --font-paragrafo: "vista-sans", sans-serif;
+  --1: #fff;
+  --2: #000;
+  --3: #e26200;
+
+  --font: "shlop", sans-serif;
 }
 
-html, body {
-  min-height: 100vh;
-  background-color: var(--cor4);
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
 }
 
 header {
-  background-image: linear-gradient(to bottom, var(--cor3), var(--cor1));
-  padding: 50px 0px 50px 0px;
-  text-align: center;
+  position: relative;
+  background-image: url('../imagens/Firefly\ horror\,\ halloween\ 67177.jpg');
+  background-size: cover;
+  min-height: 100vh;
+  background-position: top center;
+
 }
 
 header > h1 {
-  color: var(--cor1);
-  font-family: var(--font-titulo);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   font-size: 10vw;
-  text-shadow: 1px 2px 3px #0000005c;
+  color: var(--1);
+  text-shadow: 4px 2px 2px #ff6600;
+  font-family: var(--font);
+  letter-spacing: 5px;
+  font-variant: small-caps;
+  
 }
 
 nav {
-  margin: 0;
-  background-color: var(--cor1);
-  text-align: center;
-  padding-bottom: 5px 0px;
-  padding-top: 10px;
-  font-family: var(--font-paragrafo);
-  font-weight: bolder;
-  box-shadow: 0px -10px 50px #0000003b;
+  position: sticky;
+  left: -30%;
+  right: 60%;
+  top: -100%;
+  transform: translate(-60%, -0%, -50%);
+
 }
 
 nav > a {
-  color: var(--cor4);
   text-decoration: none;
-  padding-right: 10px;
-  text-shadow: 1px 1px 1px #10403b4b;
-}
-
-nav > a:hover {
-  color: var(--cor3);
-  background-color: var(--cor2);
-  padding: 5px;
-  border-radius: 2px;
-  
-}
-
-main {
-  background-color: var(--cor1);
-  padding: 50px 10px;
-}
-
-main > section {
-  padding: 5vw;
-  text-indent: 10px;
-  color: var(--cor4);
-  font-size: 2.5vw;
-  line-height: 2em;
-  background-attachment: fixed;
-  
-}
-
-main > section.texto {
-  font-family: var(--font-paragrafo);
-  display: inline-block;
-  margin-left: -20px;
-}
-
-main > section.imagem {
-  background-color: var(--cor4);
-  background-size: cover;
-  margin-left: -10px;
-  margin-right: -10px;
-  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.474);
-}
-
-main > section.imagem > p {
-  background-color: rgba(255, 255, 255, 0.664);
-  font-family: var(--font-paragrafo);
-  padding: 20px;
-  line-height: 2em;
-  position: sticky;
-  left: -5%;
-  top: 5%;
-  transform: translate(-5%, 5%);
-  width: 50%;
-  height: 50%;
-  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.37);
-  
-}
-
-section#img1 {
-  background-image: url('../imagens/Firefly\ book\ 97956.jpg');
-}
-
-section#img2 {
-  background-image: url('../imagens/Firefly\ sunflower\ ladybird\ 59875.jpg');
-}
-
-section#img3 {
-  background-image: url('../imagens/Firefly\ apple\,\ cherry\ and\ pear\ in\ a\ strainer\ on\ a\ table\ 74191.jpg');
-}
-
-footer {
-  background-color: lightgray;
-  padding: 10px;
-}
-
-footer > p {
-  font-family: var(--font-paragrafo);
-  text-align: center;
-}
-
-footer a {
-  color: var(--cor3);
-  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.312);
-  text-decoration: none;
-  font-size: 1.1em;
-}
-
-footer a:hover {
-  color: var(--cor4);
-  text-decoration: underline;
-  font-variant: small-caps;
+  color: var(--3);
+  text-shadow: 1px 2px 1px #000000;
 }
 
 
