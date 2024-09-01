@@ -13,6 +13,7 @@
   --1: #fff;
   --2: #000;
   --3: #e26200;
+  --4: #fca063;
 
   --font: "shlop", sans-serif;
 }
@@ -28,7 +29,7 @@ header {
   background-size: cover;
   min-height: 100vh;
   background-position: top center;
-
+  box-shadow: 0px 2px 3px #00000044;
 }
 
 header > h1 {
@@ -45,20 +46,134 @@ header > h1 {
   
 }
 
-nav {
-  position: sticky;
-  left: -30%;
-  right: 60%;
-  top: -100%;
-  transform: translate(-60%, -0%, -50%);
+header a {
+  color: var(--1);
+  text-decoration: none;
 
+}
+
+header a:hover {
+  color: var(--3);
+  text-shadow: 1px 2px 1px #ffffff;
+
+}
+
+nav {
+  position: relative;
+  left: 0%;
+  right: 0%;
+  top: -100%;
+  text-align: center;
+  background-color: var(--3);
+  padding: 10px;
 }
 
 nav > a {
   text-decoration: none;
-  color: var(--3);
-  text-shadow: 1px 2px 1px #000000;
+  color: var(--1);
+  text-shadow: 1px 2px 1px #00000056;
+  padding-right: 10px;
+  position: relative;
+
 }
+
+nav > a:hover {
+  color: var(--2);
+  text-shadow: 1px 2px 2px rgba(255, 255, 255, 0.911);
+  transition: .6s;
+}
+
+nav a::after {
+  content: " ";
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+main {
+  margin: auto;
+  max-width: 700px;
+
+
+}
+
+article {
+  padding: 10px;
+}
+
+article > h1 {
+  
+  color: var(--1);
+  text-align: center;
+  background-image: linear-gradient(to right, var(--2), var(--3));
+  padding: 10px;
+  box-shadow: -2px -2px 3px #00000044;
+}
+
+article > p {
+  text-indent: 30px;
+  text-align: justify;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  line-height: 2em;
+  background-image: linear-gradient(to bottom, var(--1), var(--3));
+
+}
+
+article img {
+  width: 70%;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  box-shadow: -2px -2px 3px #00000018;
+}
+
+article > table {
+  border-collapse: collapse;
+  width: 462px;
+  margin: auto;
+  box-shadow: 0px 2px 3px #0000002c;
+}
+
+article th, td {
+  border: 2px solid black;
+  text-align: center;
+
+}
+
+article th {
+  font-size: 1.5em;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.205);
+}
+
+article td {
+  color: var(--3);
+}
+
+article iframes {
+  margin: auto;
+  display: block;
+}
+
+footer {
+  background-color: var(--2);
+  padding: 20px;
+  box-shadow: -2px -4px 3px #0000002c;
+  margin-top: 40px;
+}
+
+footer > p {
+  color: #fff;
+  text-align: center;
+  font-family: monospace;
+}
+
 
 
 
