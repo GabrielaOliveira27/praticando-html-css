@@ -6,3 +6,31 @@
   box-sizing: border-box;
 }
 
+img {
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+a {
+  color: white;
+  font-size: 1.2em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+a > p {
+  padding: 10px;
+  background-color: darkred;
+}
+
+p:hover {
+  background-color: red;
+}
+

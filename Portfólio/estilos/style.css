@@ -8,7 +8,7 @@
 
 html, body {
   height: 100vh;
-  background-image: url('../imagens/Firefly\ desenvolvimento\ web\,\ design\,\ html\,\ css\ 79489.jpg');
+  background-image: url('../imagens/Firefly\ estudo\,\ livros\ 80904.jpg');
   background-position: center center;
   background-size: cover;
 }
@@ -37,3 +37,20 @@ iframe#tela {
   height: 470px;
 
 }
+
+section#redes-sociais, img {
+  border-radius: 50%;
+  width: 25%;
+  position: sticky;
+  left: 93%;
+  top: 5%;
+  margin-bottom: 10px;
+  border: transparent;
+}
+
+section img:hover {
+  transform: translate(-3px, -3px);
+  transition: transform .4s, border .8s;
+  border: 1px solid white;
+}
+
