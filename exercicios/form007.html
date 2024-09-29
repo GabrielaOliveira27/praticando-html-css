@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recapitulando</title>
+
+  <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: lightgray;
+      }
+
+      h1 {
+        color: rgb(0, 193, 183);
+        text-shadow: 1px 1px 3px #00ecbd89;
+        text-align: center;
+      }
+
+      textarea {
+        border: 2px solid lightslategray;
+        width: 200px;
+        height: 100px;
+        margin-top: 20px;
+      }
+
+      textarea:hover {
+        background-color: gainsboro;
+
+      }
+
+      legend{
+        text-align: center;
+      }
+
+      fieldset {
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.362);
+        width: 500px;
+        margin: auto;
+        border: 2px solid rgb(0, 103, 65);
+      }
+
+      .container {
+        text-align: center;
+      }
+
+  </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <form action="cadastro.php" method="post">
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          <p>
+            <label for="iest">Estado: </label>
+            <select name="estado" id="iest">
+              <option value="">-- Escolha --</option>
+               <optgroup label="Região Sudeste" class="cor">
+                 <option value="RJ">Rio de Janeiro</option>
+                 <option value="MG">Minas Gerais</option>
+                 <option value="SP">São Paulo</option>
+                 <option value="PA">Paraná</option>
+               </optgroup>
+               <optgroup label="Região Nordeste">
+                 <option value="RO">Roraima</option>
+                 <option value="PE">Pernambuco</option>
+                 <option value="FOR">Fortaleza</option>
+                 <option value="RN">Rio Grande do Norte</option>
+               </optgroup>
+            </select>
+          </p>
+          <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lsprof">
+            <datalist id="lsprof">
+               <option value="VET">Veterinário</option>
+               <option value="ADM">Administrador</option>
+               <option value="PROF">Professor</option>
+            </datalist>
+          </p>
+          <p>
+            <label for="imsg">Mensagem: </label><br>
+            <textarea name="msg" id="imsg"></textarea>
+          </p>
+        </fieldset>
+
+        <p class="container">
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
